@@ -1,109 +1,85 @@
-OBJECT-ORIENTED PYTHON PROJECTS 🚀  
-==================================  
-A collection of Object-Oriented Programming (OOP) examples in Python. Each subfolder contains a standalone project demonstrating core OOP concepts such as **classes**, **inheritance**, **polymorphism**, and **encapsulation**. These projects are suitable for beginners or anyone looking to practice Python OOP in a practical context.
+# Object-Oriented Python Projects
 
-## TABLE OF CONTENTS 📜
-1. [Gym Management System 🏋️](#1-gym-management-system-️)  
-2. [Blackjack 🃏](#2-blackjack-)  
-3. [Let’s Make a Deal 🤝](#3-lets-make-a-deal-)  
-4. [Course Management System 🎓](#4-course-management-system-)  
-5. [How to Run 🏃‍♂️](#5-how-to-run-)  
-6. [Key Concepts 🔑](#6-key-concepts-)  
-7. [License 📝](#7-license-)  
+A collection of OOP exercises in Python demonstrating **classes**, **inheritance**, **polymorphism**, **encapsulation**, and **composition** through practical, standalone projects.
 
----
+## Projects
 
-## 1. GYM MANAGEMENT SYSTEM 🏋️
-**Folder**: `gym_management_system/`  
-**Script**: `final_oop_project_script_gymnasium.py`  
+### 1. Gym Management System
 
-### Overview
-- Models a gymnasium with different membership plans:  
-  - **Basic**: Includes weight room and swimming pool only  
-  - **Three-Month**: Includes all rooms but adds a 10% fee for the climbing wall  
-  - **Annual**: Includes all rooms with no additional fee  
-- Manages customer data (addition/removal, subscription info)  
-- Returns a list of customers in alphabetical order  
+Models a gymnasium with tiered membership plans (Basic, Three-Month, Annual), customer management, and room-access cost logic. Demonstrates **inheritance** and **polymorphism**.
 
-### Features
-- Demonstrates **inheritance** by extending a base `Membership` class into multiple specialized memberships  
-- Incorporates **polymorphism** for room-access cost logic  
-- Maintains a central `Customer` archive with add/remove operations  
+```bash
+cd Object-Oriented-Beginner-Projects/Gymnasium
+python gymnasium.py
+```
 
----
+### 2. Blackjack
 
-## 2. BLACKJACK 🃏
-**Folder**: `blackjack/`  
-**Script**: `Blackjack_Game.py`  
+Console-based Blackjack card game using `Card`, `Deck`, and `Hand` classes. Demonstrates **composition** and **encapsulation**.
 
-### Overview
-- A console-based Blackjack game  
-- Uses **classes** for `Card`, `Deck`, and `Hand`  
-- Handles dealing, hitting, bust conditions, and comparing final totals  
+```bash
+cd Object-Oriented-Beginner-Projects/blackjack
+python blackjack_game.py
+```
 
-### Features
-- Demonstrates **composition** (a `Deck` composed of multiple `Card` objects; a `Hand` composed of multiple `Card` objects)  
-- Shows **encapsulation** by keeping card values, suits, and rank details hidden behind methods  
+### 3. Let's Make a Deal (Monty Hall Problem)
 
----
+Simulation of the classic Monty Hall problem — choose a door, host reveals a goat, decide whether to switch. Demonstrates **OOP game logic** design.
 
-## 3. LET’S MAKE A DEAL 🤝
-**Folder**: `lets_make_a_deal/`  
-**Script**: `"Let's Make a Deal" game.py`  
+```bash
+cd Object-Oriented-Beginner-Projects/lets_make_a_deal
+python lets_make_a_deal.py
+```
 
-### Overview
-- Python implementation of the classic **Monty Hall problem**  
-- The player chooses one of three doors; the host reveals a goat door; the player can choose to switch or stay  
-- Simulates probabilities and outcomes of the Monty Hall scenario  
+### 4. Course Management System
 
-### Features
-- Demonstrates **object-oriented design** via a `Door` class to handle door states and prizes  
-- Illustrates **game logic** flow in an OOP context  
+Simplified model of courses, students, enrollment, and grading. Demonstrates **class relationships** and **data encapsulation**.
 
----
+```bash
+cd Object-Oriented-Beginner-Projects/CourseManagementSystem
+python CourseManagementSystem.py
+```
 
-## 4. COURSE MANAGEMENT SYSTEM 🎓
-**Folder**: `course_management_system/`  
-**Script**: `CourseManagementSystem.py`  
+## Getting Started
 
-### Overview
-- Illustrates a simplified model of courses, students, or administrative functions (e.g., enrollment, grading)  
-- Demonstrates how OOP can structure academic records or similar business logic  
+### Prerequisites
 
-### Features
-- Shows **class relationships** (e.g., a `Course` may contain many `Students`, or vice versa)  
-- Emphasizes **encapsulation** and data management within classes  
+- Python 3.6+
 
----
+### Installation
 
-## 5. HOW TO RUN 🏃‍♂️
-1. **Clone** the repository or **download** the ZIP:  
-   ```bash
-   git clone https://github.com/YourUsername/object-oriented-projects.git
-   ```
-2. **Install** Python 3.x (if you haven’t already).  
-3. **Navigate** to the project folder you wish to run. For example:  
-   ```bash
-   cd object-oriented-projects/gym_management_system
-   python final_oop_project_script_gymnasium.py
-   ```
-4. Repeat similarly for the other folders:
-   - `blackjack/Blackjack_Game.py`
-   - `lets_make_a_deal/"Let's Make a Deal" game.py`
-   - `course_management_system/CourseManagementSystem.py`
+```bash
+git clone https://github.com/Wobbly1212/Object-Oriented-Projects.git
+cd Object-Oriented-Projects
+```
 
----
+Navigate to any project folder and run the script directly.
 
-## 6. KEY CONCEPTS 🔑
-- **Classes and Objects**: Each project uses custom classes to encapsulate logic and data  
-- **Inheritance**: Projects like the Gym Management System show parent-child relationships (`Membership` → `BasicMembership`, `ThreeMonthlyMembership`, `AnnualMembership`)  
-- **Polymorphism**: Different membership classes implement cost logic in varied ways  
-- **Encapsulation**: Data (like card values or customer details) is hidden within class attributes and accessed through methods  
-- **Composition**: The Blackjack game uses multiple `Card` objects to form a `Deck`, and multiple `Card` objects to form a `Hand`  
+## Project Structure
 
----
+```
+Object-Oriented-Projects/
+├── Object-Oriented-Beginner-Projects/
+│   ├── Gymnasium/              # Gym membership system
+│   ├── blackjack/              # Blackjack card game
+│   ├── lets_make_a_deal/       # Monty Hall simulation
+│   └── CourseManagementSystem/ # Course & student management
+├── LICENSE
+└── README.md
+```
 
-## 7. LICENSE 📝
-This repository is distributed for **educational purposes**. You can adapt the code for your own needs.  
+## Key Concepts
 
-**Enjoy exploring these OOP projects!** If you have any suggestions or questions, feel free to open an issue or create a pull request.
+- **Classes & Objects** — Custom classes encapsulate logic and data
+- **Inheritance** — Parent-child relationships (e.g., `Membership` base class)
+- **Polymorphism** — Different classes implement shared interfaces differently
+- **Encapsulation** — Internal data accessed through methods
+- **Composition** — Objects built from other objects (Deck from Cards)
+
+## Author
+
+**Diako Darabi**
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
