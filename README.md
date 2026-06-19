@@ -2,6 +2,8 @@
 
 A collection of OOP exercises in Python demonstrating **classes**, **inheritance**, **polymorphism**, **encapsulation**, and **composition** through practical, standalone projects.
 
+> **Scope:** foundational object-oriented design practice in pure Python (standard library only). Kept in the portfolio to show OOP fundamentals end to end.
+
 ## Projects
 
 ### 1. Gym Management System
